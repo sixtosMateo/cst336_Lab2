@@ -48,7 +48,7 @@ function generateGame()
    
     foreach($player as $p)
         {
-        echo "<img src='../img/cards/". generateRanSuit(). "/".$p.".png'>"; 
+        echo "<img src='img/cards/". generateRanSuit(). "/".$p.".png'>"; 
     }
     $sum = array_sum($player);
     return $sum;
