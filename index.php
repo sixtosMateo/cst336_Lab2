@@ -7,10 +7,10 @@
     </head>
     
     <body>
-        
+        <h1>Let's Play Silver Jack!</h1>
         <?php
-           $players = array();
            include 'includes/functions.php';
+           $players = array();
            echo "<img src = 'img/f1.png'>";
            $player1 = generateGame();
            echo $player1 . "<br>";
@@ -27,9 +27,10 @@
            echo "<img src = 'img/f4.png'>";
            $player4 = generateGame();
            echo $player4 . "<br>";
+          
     
            array_push($players, $player1, $player2, $player3, $player4);
-            $max = $player1;
+           $max = $player1;
 
 
             for($i = 0; $i < count($players); $i++){
@@ -53,17 +54,11 @@
                 case 3:
                     echo "Daniel won!";
                     break;
-            }
-          
-            
+            }  
         ?>
         
-        
-    
-        
-        
         <br>
-        <button type = "button">Play again!</button>
+        <button onClick = "window.open('index.php')" type = "button">Play again!</button>
         
         <footer>
             &copy; Created by: Maria Rivera
