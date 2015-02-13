@@ -10,7 +10,11 @@
         <h1>Let's Play Silver Jack!</h1>
         <?php
            include 'includes/functions.php';
-           determineWinners(generatePlayField());
+
+           $playerScores = generatePlayField();
+           $winnersList = determineWinners($playerScores);
+
+           printWinMSG($winnersList);
            
         ?>
         
