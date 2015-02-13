@@ -14,7 +14,7 @@
            $playerScores = generatePlayField();
            $winnersList = determineWinners($playerScores);
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
 
            echo "<img src = 'img/f4.png'>";
            $player4 = generateGame();
@@ -47,10 +47,10 @@
                     echo "Daniel won!";
                     break;
             }  
-=======
+//=======
            printWinMSG($winnersList);
            
->>>>>>> refs/remotes/origin/master
+//>>>>>>> refs/remotes/origin/master
         ?>
         
         <br>
