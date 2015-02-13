@@ -48,11 +48,62 @@ function generateGame()
    
     foreach($player as $p)
         {
-        echo "<img src='../img/cards/". generateRanSuit(). "/".$p.".png'>"; 
+        echo "<img src='img/cards/". generateRanSuit(). "/".$p.".png'>"; 
     }
     $sum = array_sum($player);
     return $sum;
  
+}
+
+function generatePlayField(){
+    $players = array();
+    $images = array("f1","f2","f3", "f4");
+    
+    for($index = 0; $index < count($images); $index++){
+        echo "<img src = 'img/".$images[$index].".png'>";
+        array_push($players,generateGame());
+        echo $players[$index] . "<br>";
+    }
+    
+    return ($players);
+}
+
+function determineWinners($players){
+     $max = max($players);
+     $winner = array();
+
+    for($i = 0; $i < count($players); $i++){
+        if($players[$i] >= $max){
+           array_push($winner,$i);
+        }
+    }
+    
+    return $winner;
+}
+
+function printWinMSG($winner){
+    
+    if(sizeof($winner) == 1){
+        switch($winner[0]){
+            case 0:
+            echo "Brayanne won!";
+            break;
+            case 1:
+            echo "Maria won!";
+            break;
+            case 2:
+            echo "Mateo won!";
+            break;
+            case 3:
+            echo "Daniel won!";
+            break;
+            default: "Error!";
+            break;
+        }
+    }
+    else{
+        echo "Tie!";
+    }
 }
 
 
