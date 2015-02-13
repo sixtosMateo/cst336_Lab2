@@ -30,12 +30,12 @@
           
     
            array_push($players, $player1, $player2, $player3, $player4);
-           $max = $player1;
+           $max = abs($players[0] - 42);
 
 
-            for($i = 0; $i < count($players); $i++){
-                if($players[$i] > $max){
-                    $max = $players[$i];
+            for($i = 1; $i < count($players); $i++){
+                if(abs($players[$i] - 42) <= $max){
+                    $max = $players[$i] - 42;
                     $winner = $i;
                 }
             }
