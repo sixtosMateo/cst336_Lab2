@@ -78,11 +78,6 @@ function determineWinners($players){
         }
     }
     
-    return $winner;
-}
-
-function printWinMSG($winner){
-    
     if(sizeof($winner) == 1){
         switch($winner[0]){
             case 0:
