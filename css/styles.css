@@ -21,7 +21,7 @@ root {
 */               
           
         img{
-            border: purple 10px solid;
+            border: black 10px solid;
             border-radius: 20px;
             margin-left: 7px;
         }
@@ -35,15 +35,18 @@ root {
         /* Gave multiple options incase the font family is not available in the browser*/
         body{
             font-family: Verdana, Arial, Times New Roman; 
-            background: black;
+            background: #800000 ;
         }
 
         h4{
             color: white;
-            text-align:left;
         }
 
         footer{
+            color: white;
+        }
+
+        h1{
             color: white;
         }
         
