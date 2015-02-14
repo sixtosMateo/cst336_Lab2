@@ -94,23 +94,23 @@ function printWinMSG($winner){
     if(sizeof($winner) == 1){
         switch($winner[0]){
             case 0:
-            echo "<h4>Brayanne won!</h4>";
+            echo "Brayanne won!";
             break;
             case 1:
-            echo "<h4>Maria won!</h4>";
+            echo "Maria won!";
             break;
             case 2:
-            echo "<h4>Mateo won!</h4>";
+            echo "Mateo won!";
             break;
             case 3:
-            echo "<h4>Daniel won!</h4>";
+            echo "Daniel won!";
             break;
-            default: "<h4>Error!</h4>";
+            default: "Error!";
             break;
         }
     }
     else{
-        echo "<h4>Tie!</h4>";
+        echo "Tie!";
     }
 }
 
