@@ -3,7 +3,7 @@
     <head>
         <title>SilverJack</title>
         <meta charset="utf-8"/>
-        <link href="css/styles.css" rel="stylesheet"/>
+ 
     </head>
     
     <body>
@@ -14,7 +14,6 @@
 
            $playerScores = generatePlayField();
            $winnersList = determineWinners($playerScores);
-
            printWinMSG($winnersList);
 
         ?>

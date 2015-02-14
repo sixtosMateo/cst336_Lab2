@@ -31,7 +31,6 @@ root {
             color: orange !important; /* <!-- !important will have the highest priority -->;*/
             background: blue;
             text-align: center;
-            text
         }
 
         #navigation{
