@@ -18,53 +18,12 @@ root {
     Description:
     Purpose of the stylesheet follows.
     To change this template use Tools | Templates.
-*/
-        #wrapper{
-            width: 700px;
-            margin: auto;
-            background: red;
-            padding: 10px;
-            border-radius: 15px;
-        }
-        
-        #mainHeader{ /*<!--when using an id as a selecter a # needs to precede the id-->*/
-            color: orange !important; /* <!-- !important will have the highest priority -->;*/
-            background: blue;
-            text-align: center;
-        }
-
-        #navigation{
-            color: white;
-            background: red;
-            text-align: center;
-        }
-        
-        a:hover{
-             color: brown;
-            background: #7db9e8; /* Old browsers */
-            background: -moz-linear-gradient(top,  #7db9e8 0%, #207cca 49%, #2989d8 50%, #1e5799 100%); /* FF3.6+ */
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7db9e8), color-stop(49%,#207cca), color-stop(50%,#2989d8), color-stop(100%,#1e5799)); /* Chrome,Safari4+ */
-            background: -webkit-linear-gradient(top,  #7db9e8 0%,#207cca 49%,#2989d8 50%,#1e5799 100%); /* Chrome10+,Safari5.1+ */
-            background: -o-linear-gradient(top,  #7db9e8 0%,#207cca 49%,#2989d8 50%,#1e5799 100%); /* Opera 11.10+ */
-            background: -ms-linear-gradient(top,  #7db9e8 0%,#207cca 49%,#2989d8 50%,#1e5799 100%); /* IE10+ */
-            background: linear-gradient(to bottom,  #7db9e8 0%,#207cca 49%,#2989d8 50%,#1e5799 100%); /* W3C */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
-
-        
-            padding-right: 10px;
-        }
-
-        .currentPage{
-            color: greenyellow;
-            padding-top: 20px;
-        }
-        
+*/               
           
         img{
             border: purple 10px solid;
             border-radius: 20px;
             margin-left: 7px;
-            float:right;
         }
         
         img:hover{
@@ -73,61 +32,18 @@ root {
             transition: all 2s;
         }
         
-        .lifestyle{
-            color:white;
-        }
-        
-        li{
-            list-style-type: square; 
-        }
-        
-        figure{
-            margin-left: 10px;
-            float: right;
-        }
-        
-        figcaption{
-            color: brown;
-            text-align: center;
-        }
-        
         /* Gave multiple options incase the font family is not available in the browser*/
         body{
             font-family: Verdana, Arial, Times New Roman; 
             background: black;
         }
-        
-       nav a{
-            padding: 10px;
-            padding-bottom: .1px;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-                        background: #1e5799; /* Old browsers */
-            background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6+ */
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(51%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
-            background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
-            background: -o-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Opera 11.10+ */
-            background: -ms-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* IE10+ */
-            background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
 
+        h4{
+            color: white;
+            text-align:left;
         }
-        
-        .currentPage{
-            color: red;
-            padding-top: 20px;
-        }
-        
-        nav a:hover{
-            color: orange;
-            background: #7db9e8; /* Old browsers */
-            background: -moz-linear-gradient(top,  #7db9e8 0%, #207cca 49%, #2989d8 50%, #1e5799 100%); /* FF3.6+ */
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7db9e8), color-stop(49%,#207cca), color-stop(50%,#2989d8), color-stop(100%,#1e5799)); /* Chrome,Safari4+ */
-            background: -webkit-linear-gradient(top,  #7db9e8 0%,#207cca 49%,#2989d8 50%,#1e5799 100%); /* Chrome10+,Safari5.1+ */
-            background: -o-linear-gradient(top,  #7db9e8 0%,#207cca 49%,#2989d8 50%,#1e5799 100%); /* Opera 11.10+ */
-            background: -ms-linear-gradient(top,  #7db9e8 0%,#207cca 49%,#2989d8 50%,#1e5799 100%); /* IE10+ */
-            background: linear-gradient(to bottom,  #7db9e8 0%,#207cca 49%,#2989d8 50%,#1e5799 100%); /* W3C */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
 
+        footer{
+            color: white;
         }
         
