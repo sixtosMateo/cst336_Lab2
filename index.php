@@ -3,15 +3,19 @@
     <head>
         <title>SilverJack</title>
         <meta charset="utf-8"/>
-        
+        <link href="css/styles.css" rel="stylesheet"/>
     </head>
     
     <body>
         <h1>Let's Play Silver Jack!</h1>
         <?php
            include 'includes/functions.php';
-           determineWinners(generatePlayField());
-           
+
+
+           $playerScores = generatePlayField();
+           $winnersList = determineWinners($playerScores);
+
+           printWinMSG($winnersList);
         ?>
         
         <br>
