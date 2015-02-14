@@ -69,14 +69,23 @@ function generatePlayField(){
 }
 
 function determineWinners($players){
-    $max = max($players);
     $winner = array();
-
+    $differenceArr = array();
+    $winningNumber = 42;
+    
     for($i = 0; $i < count($players); $i++){
-        if($players[$i] >= $max){
-           array_push($winner,$i);
+        array_push($differenceArr,abs($players[$i] - $winningNumber) );
+    }
+    
+    $winningPlayer = min($differenceArr);
+    
+    for($i = 0; $i < count($players); $i++){
+        if($winningPlayer == $differenceArr[$i]){
+            array_push($winner,$i);
         }
     }
+    
+    
     
     return $winner;
 }
